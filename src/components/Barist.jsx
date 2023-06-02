@@ -20,10 +20,7 @@ const Barist = () => {
 		},
 	];
 	return (
-		<div className="h-auto w-full my-20">
-			<h2 className="text-center my-5 uppercase font-semibold font-serif text-4xl">
-				Conoce nuestros Tostadores
-			</h2>
+		<div className="h-auto w-full mb-20">
 			<div className="grid mb-24 grid-cols-1 md:grid-cols-3 gap-20 md:gap-8 content-center place-content-center max-w-screen-lg mx-auto ">
 				{lawyer &&
 					lawyer.map((law) => (

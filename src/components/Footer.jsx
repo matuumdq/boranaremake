@@ -1,7 +1,14 @@
 const Footer = () => {
 	return (
 		<footer className="w-full bg-black shadow-[0px_0px_20px_5px_#00000024] py-4">
-			<div className="max-w-screen-lg mx-auto grid justify-center gap-4 lg:justify-between">
+			<div className=" mx-10 flex flex-col md:flex-row gap-4 justify-between items-center">
+				<div>
+					<img
+						src="https://res.cloudinary.com/dnqmez68n/image/upload/v1685658210/boranahorizontal_zihxfv.png"
+						alt="Borana logo"
+						className="h-16"
+					/>
+				</div>
 				<div className="flex flex-col font-semibold self-center text-sm md:block text-white">
 					<span>©{new Date().getFullYear()} All rights reserved</span>
 				</div>

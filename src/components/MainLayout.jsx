@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Nabvar";
 import Footer from "./Footer";
+import Mountain from "./Mountain";
 
 const MainLayout = () => {
 	const location = useLocation();
@@ -20,6 +21,7 @@ const MainLayout = () => {
 					</main>
 				</CSSTransition>
 			</TransitionGroup>
+			<Mountain />
 			<Footer />
 		</>
 	);

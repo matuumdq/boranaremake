@@ -8,12 +8,15 @@ const Hero = () => {
 			/>
 			<div className="relative text-white w-full flex items-center justify-start md:pl-24 h-full">
 				<div className="flex flex-col items-center">
-					{/* <h1 className="text-white font-bold text-4xl">BORANA</h1> */}
 					<img
 						src="https://res.cloudinary.com/dnqmez68n/image/upload/v1685658208/boranaverticalblanco_phtjmj.png"
 						alt=""
 					/>
-					<p>Tostadores de cafe</p>
+					<div className="bg-clip-text bg-[url('https://res.cloudinary.com/dnqmez68n/image/upload/v1685722840/rust_zrxlnh.jpg')]">
+						<p className="font-extrabold text-3xl text-transparent uppercase">
+							Tostadores de cafe
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
