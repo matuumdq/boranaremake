@@ -6,7 +6,7 @@ export default {
 			fontFamily: {
 				nunito: ["Nunito", "sans-serif"],
 				antonio: ["Antonio", "sans-serif"],
-				trade: ["Trade Gothic Next Rust W01", "sans-serif"],
+				trade: ["trade", "sans-serif"],
 			},
 		},
 	},
