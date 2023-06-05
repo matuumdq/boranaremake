@@ -15,7 +15,13 @@ const Varieties = () => {
 			{coffee.map((cafe) => (
 				<div
 					key={cafe.id}
-					className={`flex md:min-h-[70vh] md:grid md:grid-cols-3 relative pt-8 flex-col rounded-3xl md:rounded-none bg-[url('${cafe.fondo}')] bg-cover p-4 bg-top`}
+					className={`flex md:min-h-screen md:grid md:grid-cols-3 relative pt-8 flex-col rounded-3xl md:rounded-none p-4`}
+					style={{
+						backgroundImage: `url(${cafe.fondo})`,
+						backgroundPosition: "center",
+						backgroundSize: "cover",
+						backgroundRepeat: "no-repeat",
+					}}
 				>
 					<img
 						src="https://res.cloudinary.com/dnqmez68n/image/upload/v1685658210/boranahorizontal_zihxfv.png"
