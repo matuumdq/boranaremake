@@ -31,7 +31,7 @@ const Varieties = () => {
 								{cafe.nombre2}
 							</h3>
 						</div>
-						<div className="mr-6 grid grid-cols-3 grid-rows-2 gap-x-3 my-4 md:-mt-10">
+						<div className="mr-6 grid grid-cols-3 grid-rows-2 gap-x-3 my-4 md:-mt-10  font-trade">
 							<p className="uppercase text-sm border-b-2 border-black pb-1">
 								puntaje de cata:
 							</p>
