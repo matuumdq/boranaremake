@@ -1,6 +1,8 @@
+import { AiOutlineShoppingCart } from "react-icons/ai";
+
 const History = () => {
 	return (
-		<div className="h-auto min-h-screen w-full my-3">
+		<div id="nosotros" className="h-auto min-h-screen w-full my-3">
 			<div className="h-full w-full absolute flex justify-center md:grid md:grid-cols-2 md:grid-rows-2">
 				<img
 					src="https://images.pexels.com/photos/7400278/pexels-photo-7400278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -54,6 +56,13 @@ const History = () => {
 					<p className="text-gray-800">
 						Y disfruta tu cafe favorito en tu casa
 					</p>
+					<a
+						href="#"
+						className="bg-white text-gray-800 font-bold rounded border-b-2 border-gray-400 hover:border-gray-400 hover:bg-gray-300 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
+					>
+						<span className="mr-2 uppercase">TIENDA</span>
+						<AiOutlineShoppingCart />
+					</a>
 				</div>
 			</div>
 		</div>

@@ -16,24 +16,24 @@ const Navbar = () => {
 				/>
 			</Link>
 			<div className="hidden md:flex items-center cursor-pointer font-medium gap-10 p-1">
-				<Link
-					to="/nosotros"
-					className="border-b-2 border-transparent hover:border-purple-600 hover:text-purple-600 ease-in duration-300"
+				<a
+					href="#nosotros"
+					className="border-y-2 py-1 uppercase border-transparent text-white hover:border-white ease-in duration-300"
 				>
 					Nosotros
-				</Link>
-				<Link
-					to="/tienda"
-					className="border-b-2 border-transparent hover:border-purple-600 hover:text-purple-600 ease-in duration-300"
+				</a>
+				<a
+					href="#tienda"
+					className="border-y-2 py-1 uppercase border-transparent text-white hover:border-white ease-in duration-300"
 				>
 					Tienda
-				</Link>
-				<Link
-					to="/contactanos"
-					className="border-b-2 border-transparent hover:border-purple-600 hover:text-purple-600 ease-in duration-300"
+				</a>
+				<a
+					href="#contacto"
+					className="border-y-2 py-1 uppercase border-transparent text-white hover:border-white ease-in duration-300"
 				>
 					Contactanos
-				</Link>
+				</a>
 			</div>
 			<div
 				className="cursor-pointer md:hidden"
@@ -75,28 +75,28 @@ const Navbar = () => {
 				</Link>
 				<nav>
 					<ul className="my-32 flex flex-col px-4 py-8 gap-10 justify-center items-center text-xl text-black">
-						<Link
-							to="/nosotros"
+						<a
+							href="#nosotros"
 							onClick={() => setNav(false)}
 							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
 						>
 							Nosotros
-						</Link>
-						<Link
-							to="/tienda"
+						</a>
+						<a
+							href="#tienda"
 							onClick={() => setNav(false)}
 							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
 						>
 							Tienda
-						</Link>
-						<Link
-							to="/contactanos"
+						</a>
+						<a
+							href="#contacto"
 							onClick={() => setNav(false)}
 							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
 						>
 							<GrMail size={25} className="mr-4" />
 							Contactanos
-						</Link>
+						</a>
 					</ul>
 				</nav>
 			</div>

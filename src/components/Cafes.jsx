@@ -9,7 +9,7 @@ const Cafes = () => {
 				/>
 			</div>
 			<div className="flex justify-center items-center">
-				<p className="text-sm md:text-lg w-2/3">
+				<p className="md:text-lg md:w-2/3">
 					Borana nace en 2020 en Mar del Plata como un tostadero de
 					café de especialidad impulsado por el deseo de ofrecer café
 					de alta calidad y de diversos orígenes. Luego de tostar,
@@ -33,7 +33,7 @@ const Cafes = () => {
 				/>
 			</div>
 			<div className="flex justify-center items-center">
-				<p className="text-sm md:text-lg w-2/3">
+				<p className="md:text-lg md:w-2/3">
 					Para quienes hacemos Borana, un café de especialidad es
 					aquel que activa todos tus sentidos con aromas sorprendentes
 					y deliciosas notas en boca.

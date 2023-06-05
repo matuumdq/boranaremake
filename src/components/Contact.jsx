@@ -1,7 +1,10 @@
 import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
 const Contact = () => {
 	return (
-		<section className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
+		<section
+			id="contacto"
+			className="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10"
+		>
 			<div className="container max-w-screen-xl mx-auto">
 				<div className="flex flex-wrap lg:justify-between -mx-4">
 					<div className="w-full lg:w-1/2 xl:w-6/12 px-4">

@@ -4,9 +4,11 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				nunito: ["Nunito", "sans-serif"],
-				antonio: ["Antonio", "sans-serif"],
 				trade: ["trade", "sans-serif"],
+				tradegothic: ["tradegothic", "sans-serif"],
+			},
+			screens: {
+				fold: "350px",
 			},
 		},
 	},
