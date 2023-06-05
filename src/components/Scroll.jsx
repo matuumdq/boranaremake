@@ -4,7 +4,7 @@ const Scroll = () => {
 	const [showScrollButton, setShowScrollButton] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.pageYOffset > 10) {
+			if (window.pageYOffset > 200) {
 				// Mostrar el botón de regreso al inicio después de desplazarse 200 píxeles hacia abajo
 				setShowScrollButton(true);
 			} else {
@@ -20,7 +20,7 @@ const Scroll = () => {
 		};
 	}, []);
 	return (
-		<div className="fixed bottom-10 right-0 mb-4 mr-4 z-50">
+		<div className="fixed bottom-14 right-0 mb-4 mr-9 z-50">
 			{showScrollButton && (
 				<BsFillArrowUpCircleFill
 					className="text-3xl fold:text-5xl text-gray-800"
