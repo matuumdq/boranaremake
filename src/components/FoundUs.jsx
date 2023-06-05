@@ -50,6 +50,7 @@ const FoundUs = () => {
 				animationDuration="1500"
 				paddingLeft={80}
 				disableDotsControls
+				disableButtonsControls
 			/>
 		</div>
 	);

@@ -3,13 +3,13 @@ import { GiCoffeeBeans } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Varieties = () => {
-	const cafes = [
-		"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718172/Caramel_coafnw.png",
-		"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/fazenda_gwihos.png",
-		"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718317/TOpazio_w51lzm.png",
-		"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/Cauca_dnmnqb.png",
-		"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719288/finca_vnoybr.png",
-	];
+	// const cafes = [
+	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718172/Caramel_coafnw.png",
+	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/fazenda_gwihos.png",
+	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718317/TOpazio_w51lzm.png",
+	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/Cauca_dnmnqb.png",
+	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719288/finca_vnoybr.png",
+	// ];
 	return (
 		<div className="flex flex-col gap-4 mb-6 font-tradereg" id="tienda">
 			{coffee.map((cafe) => (
@@ -42,28 +42,30 @@ const Varieties = () => {
 								puntaje de cata:
 							</p>
 							<p className="row-span-2 col-start-2 row-start-1 text-6xl font-trade h-full font-bold my-auto">
-								{Number(cafe.punt).toFixed(2)}
+								{Number(cafe.punt).toLocaleString(undefined, {
+									minimumFractionDigits: 2,
+								})}
 							</p>
 							<p className="uppercase text-sm pt-1 border-t-2 border-black pb-1 font-tradegothic font-semibold -tracking-[0.08em] w-[85px]">
 								{cafe.calif}
 							</p>
 						</div>
-						<div>
+						<div className="">
 							<img
 								src={cafe.pais}
 								alt=""
 								className="h-auto w-14 object-contain md:w-24 absolute right-0 top-44 fold:top-0 md:top-0 md:left-0"
 							/>
-							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm py-1.5 uppercase ">
+							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm md:text-base py-1.5 uppercase ">
 								Region: {cafe.region}
 							</p>
-							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm py-1.5 uppercase">
+							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm md:text-base py-1.5 uppercase">
 								Variedad: {cafe.variedad}
 							</p>
-							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm py-1.5 uppercase ">
+							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm md:text-base py-1.5 uppercase ">
 								Proceso: {cafe.proceso}
 							</p>
-							<p className="font-semibold text-sm py-1.5 uppercase">
+							<p className="font-semibold text-sm md:text-base py-1.5 uppercase">
 								Altura: {cafe.altura} metros sobre el nivel del
 								mar
 							</p>
@@ -161,11 +163,11 @@ const Varieties = () => {
 					</div>
 				</div>
 			))}
-			{cafes.map((cafe, index) => (
+			{/* {cafes.map((cafe, index) => (
 				<div key={index} className="w-full">
 					<img src={cafe} alt="" className="w-full h-auto" />
 				</div>
-			))}
+			))} */}
 		</div>
 	);
 };

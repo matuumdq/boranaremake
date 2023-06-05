@@ -21,7 +21,7 @@ const History = () => {
 				/>
 			</div>
 			<div className="relative grid grid-cols-1 md:grid-cols-2 content-center place-items-center gap-1 md:gap-0 min-h-screen w-full max-w-screen-lg mx-auto">
-				<div className="bg-white py-4 md:bg-white md:h-56 flex flex-col justify-center items-center px-16 gap-4">
+				<div className="bg-white py-4 md:bg-white md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">
 						Nuestros Cafes
 					</h3>
@@ -31,7 +31,7 @@ const History = () => {
 						la SCA (Specialty Coffee Association)
 					</p>
 				</div>
-				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-16 gap-4">
+				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">
 						Modalidad
 					</h3>
@@ -41,7 +41,7 @@ const History = () => {
 						corto plazo, asegurando la frescura del producto.
 					</p>
 				</div>
-				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-16 gap-4">
+				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">Calidad</h3>
 					<p className="text-gray-800">
 						Aplicamos técnicas de manufactura y métodos de control
@@ -49,7 +49,7 @@ const History = () => {
 						nuestros productos y la inocuidad de los mismos.
 					</p>
 				</div>
-				<div className="bg-white py-4 md:bg-white md:h-56 flex w-full flex-col justify-center items-center px-16 gap-4">
+				<div className="bg-white py-4 md:bg-white md:h-56 flex w-full flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">
 						Visita nuestra tienda Online
 					</h3>
@@ -57,7 +57,7 @@ const History = () => {
 						Y disfruta tu cafe favorito en tu casa
 					</p>
 					<a
-						href="#"
+						href="#tienda"
 						className="bg-white text-gray-800 font-bold rounded border-b-2 border-gray-400 hover:border-gray-400 hover:bg-gray-300 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
 					>
 						<span className="mr-2 uppercase">TIENDA</span>

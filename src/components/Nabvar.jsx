@@ -1,5 +1,10 @@
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { GrMail } from "react-icons/gr";
+import {
+	AiOutlineClose,
+	AiOutlineMenu,
+	AiOutlineShoppingCart,
+} from "react-icons/ai";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsBook, BsPerson } from "react-icons/bs";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -21,6 +26,12 @@ const Navbar = () => {
 					className="border-y-2 py-1 uppercase border-transparent text-white hover:border-white ease-in duration-300"
 				>
 					Nosotros
+				</a>
+				<a
+					href="#historia"
+					className="border-y-2 py-1 uppercase border-transparent text-white hover:border-white ease-in duration-300"
+				>
+					Historia
 				</a>
 				<a
 					href="#tienda"
@@ -57,7 +68,7 @@ const Navbar = () => {
 			<div
 				className={
 					nav
-						? "fixed top-0 left-0 w-full sm:w-[300px] h-screen bg-gray-600 z-20 duration-300"
+						? "fixed top-0 left-0 w-full sm:w-[300px] h-screen bg-black text-white z-20 duration-300"
 						: "fixed top-0 left-[-120%] w-[300px] h-screen bg-gray-600 z-10 duration-300"
 				}
 			>
@@ -74,27 +85,37 @@ const Navbar = () => {
 					/>
 				</Link>
 				<nav>
-					<ul className="my-32 flex flex-col px-4 py-8 gap-10 justify-center items-center text-xl text-black">
+					<ul className="my-32 flex flex-col px-4 py-8 gap-10 justify-center w-full fold:ml-24 sm:ml-5 text-xl ">
 						<a
 							href="#nosotros"
 							onClick={() => setNav(false)}
-							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
+							className="hover:border-white border-l-4 px-2 border-transparent hover:scale-105 ease-in duration-200 flex"
 						>
+							<BsPerson size={25} className="mr-4" />
 							Nosotros
+						</a>
+						<a
+							href="#historia"
+							onClick={() => setNav(false)}
+							className="hover:border-white border-l-4 px-2 border-transparent hover:scale-105 ease-in duration-200 flex"
+						>
+							<BsBook size={25} className="mr-4" />
+							Historia
 						</a>
 						<a
 							href="#tienda"
 							onClick={() => setNav(false)}
-							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
+							className="hover:border-white border-l-4 px-2 border-transparent hover:scale-105 ease-in duration-200 flex"
 						>
+							<AiOutlineShoppingCart size={25} className="mr-4" />
 							Tienda
 						</a>
 						<a
 							href="#contacto"
 							onClick={() => setNav(false)}
-							className="hover:text-blue-600 hover:scale-105 ease-in duration-200 flex"
+							className="hover:border-white border-l-4 px-2 border-transparent hover:scale-105 ease-in duration-200 flex"
 						>
-							<GrMail size={25} className="mr-4" />
+							<HiOutlineMail size={25} className="mr-4" />
 							Contactanos
 						</a>
 					</ul>

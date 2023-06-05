@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import FoundUs from "./FoundUs";
 import Hero from "./Hero";
 import History from "./History";
+import Scroll from "./Scroll";
 import Varieties from "./Varieties";
 
 const Home = () => {
@@ -15,7 +16,10 @@ const Home = () => {
 				Conoce nuestros tostadores
 			</h2>
 			<Barist />
-			<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+			<h2
+				id="historia"
+				className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+			>
 				Conoce nuestra historia
 			</h2>
 			<Cafes />
@@ -28,6 +32,7 @@ const Home = () => {
 			</h2>
 			<FoundUs />
 			<Contact />
+			<Scroll />
 		</div>
 	);
 };
