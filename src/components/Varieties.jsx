@@ -28,7 +28,7 @@ const Varieties = () => {
 						alt=""
 						className="h-auto w-28 absolute left-2 md:left-auto md:right-10 top-2 md:top-4"
 					/>
-					<div className="flex flex-col w-full relative justify-around ">
+					<div className="flex flex-col w-full relative justify-around md:ml-8">
 						<div className="flex flex-col md:mt-20 font-trade">
 							<h2 className="text-5xl md:text-8xl font-extrabold uppercase ">
 								{cafe.nombre}
@@ -54,7 +54,7 @@ const Varieties = () => {
 							<img
 								src={cafe.pais}
 								alt=""
-								className="h-auto w-14 object-contain md:w-24 absolute right-0 top-44 fold:top-0 md:top-0 md:left-0"
+								className="h-auto w-14 object-contain md:w-24 absolute right-0 top-52 fold:-top-6 md:top-0 md:left-0"
 							/>
 							<p className="border-b-2 border-black mr-[30%] font-semibold text-sm md:text-base py-1.5 uppercase ">
 								Region: {cafe.region}
@@ -90,15 +90,21 @@ const Varieties = () => {
 							)}
 							<h3 className="uppercase font-bold">Valores:</h3>
 							<div className="max-w-xs flex flex-col fold:flex-row items-center justify-between fold:gap-4">
-								<div className="flex flex-wrap justify-between w-full border-t-2 border-black py-2">
+								<div className="flex flex-wrap justify-between items-center w-full border-t-2 border-black py-2">
 									<p className="uppercase ">Pack 250gr:</p>
-									<p className="font-semibold">
-										${cafe.precio250}.-
-									</p>
+									{cafe.precio250 ? (
+										<p className="font-semibold">
+											${cafe.precio250}.-
+										</p>
+									) : (
+										<p className="font-trade text-pink-500 text-2xl tracking-wider uppercase">
+											No disponible
+										</p>
+									)}
 								</div>
-								{cafe.stock === "si" ? (
+								{cafe.stock === "si" && cafe.precio250 ? (
 									<a
-										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20en%20su%20version%20de:%20250%20gramos`}
+										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%20250%20gramos`}
 										target="_blank"
 										rel="noreferrer"
 										className="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
@@ -113,16 +119,22 @@ const Varieties = () => {
 								)}
 							</div>
 							<div className="max-w-xs flex flex-col fold:flex-row items-center justify-between fold:gap-4">
-								<div className="flex flex-wrap justify-between w-full border-t-2 border-black py-2">
+								<div className="flex flex-wrap justify-between items-center w-full border-t-2 border-black py-2">
 									<p className="uppercase ">Pack 1kg:</p>
-									<p className="font-semibold">
-										${cafe.precio1k}.-
-									</p>
+									{cafe.precio1k ? (
+										<p className="font-semibold">
+											${cafe.precio1k}.-
+										</p>
+									) : (
+										<p className="font-trade text-pink-500 text-2xl tracking-wider uppercase">
+											No disponible
+										</p>
+									)}
 								</div>
 
-								{cafe.stock === "si" ? (
+								{cafe.stock === "si" && cafe.precio1k ? (
 									<a
-										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20en%20su%20version%20de:%201%20KG`}
+										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%201%20KG`}
 										target="_blank"
 										rel="noreferrer"
 										className="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
