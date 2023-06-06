@@ -2,7 +2,10 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const History = () => {
 	return (
-		<div id="nosotros" className="h-auto min-h-screen w-full my-3">
+		<div
+			id="nosotros"
+			className="h-auto min-h-screen w-full tracking-tight md:text-lg"
+		>
 			<div className="h-full w-full absolute flex justify-center md:grid md:grid-cols-2 md:grid-rows-2">
 				<img
 					src="https://images.pexels.com/photos/7400278/pexels-photo-7400278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -31,7 +34,7 @@ const History = () => {
 						la SCA (Specialty Coffee Association)
 					</p>
 				</div>
-				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
+				<div className="bg-white py-4 md:bg-[#dad5c8] md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">
 						Modalidad
 					</h3>
@@ -41,7 +44,7 @@ const History = () => {
 						corto plazo, asegurando la frescura del producto.
 					</p>
 				</div>
-				<div className="bg-white py-4 md:bg-gray-300 md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
+				<div className="bg-white py-4 md:bg-[#dad5c8] md:h-56 flex flex-col justify-center items-center px-4 md:px-16 gap-4">
 					<h3 className="font-semibold text-xl uppercase">Calidad</h3>
 					<p className="text-gray-800">
 						Aplicamos técnicas de manufactura y métodos de control
@@ -58,9 +61,11 @@ const History = () => {
 					</p>
 					<a
 						href="#tienda"
-						className="bg-white text-gray-800 font-bold rounded border-b-2 border-gray-400 hover:border-gray-400 hover:bg-gray-300 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
+						className="bg-white text-gray-800 font-bold rounded border-b-2 border-[#dad5c8] hover:border-[#dad5c8] hover:bg-[#dad5c8] hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
 					>
-						<span className="mr-2 uppercase">TIENDA</span>
+						<span className="mr-2 uppercase tracking-wide">
+							TIENDA
+						</span>
 						<AiOutlineShoppingCart />
 					</a>
 				</div>

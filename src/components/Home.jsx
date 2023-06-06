@@ -12,21 +12,26 @@ const Home = () => {
 		<div>
 			<Hero />
 			<History />
-			<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-				Conoce nuestros tostadores
-			</h2>
-			<Barist />
+			<div className="bg-[#DAD5C8] py-4">
+				<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+					Conoce nuestros tostadores
+				</h2>
+				<Barist />
+			</div>
 			<h2
 				id="historia"
-				className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]"
+				className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px] mt-6"
 			>
 				Conoce nuestra historia
 			</h2>
+
 			<Cafes />
-			<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-				nuestros cafes
-			</h2>
-			<Varieties />
+			<div className="mt-5">
+				<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+					nuestros cafes
+				</h2>
+				<Varieties />
+			</div>
 			<h2 className="text-dark text-center mb-6 uppercase font-bold text-[32px] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
 				Encontranos en las siguientes cafeterias
 			</h2>

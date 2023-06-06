@@ -82,6 +82,7 @@ export const coffee = [
 		text3: "De cuerpo medio y sedoso, acidez media cítrica y buen dulzor, tiene el pack completo de un buen café colombiano!",
 		reco: ["Metodos Filtrados", "Aeropress", "Espresso", "Cold Brew"],
 		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685997829/caranavi_l78n4z.png",
+		disp: "07/06/2023",
 	},
 	{
 		id: 5,
@@ -107,7 +108,7 @@ export const coffee = [
 	{
 		id: 6,
 		fondo: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686011679/bolivia_b1lgju.png",
-		pais: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685819648/Brasil_2_1_yutolm.png",
+		pais: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686060506/boliviaestampita_rpprfa.png",
 		nombre: "Caranavi",
 		nombre2: "Bio Arábica Orgánico",
 		punt: 85,
@@ -128,7 +129,7 @@ export const coffee = [
 	{
 		id: 7,
 		fondo: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686011695/Honduras_hlr4cl.png",
-		pais: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685819648/Brasil_2_1_yutolm.png",
+		pais: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686060506/hondurasestam_gi5rxn.png",
 		nombre: "Finca",
 		nombre2: "Cerro Azul Orgánico",
 		punt: 88,

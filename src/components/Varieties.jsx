@@ -36,6 +36,11 @@ const Varieties = () => {
 							<h3 className="text-3xl md:text-7xl font-extrabold uppercase">
 								{cafe.nombre2}
 							</h3>
+							{cafe.disp && (
+								<p className="text-pink-500 text-lg absolute top-44 md:top-8 md:left-56 md:text-3xl w-auto text-center">
+									Disponible desde el: {cafe.disp}
+								</p>
+							)}
 						</div>
 						<div className="mr-6 grid grid-cols-[90px_minmax(0,1fr)] gap-x-1 grid-rows-2 my-4 md:-mt-10 content-center">
 							<p className="uppercase text-sm w-[60px] font-tradegothic tracking-tighter font-semibold">
