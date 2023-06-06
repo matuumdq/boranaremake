@@ -24,7 +24,7 @@ const Varieties = () => {
 					}}
 				>
 					<img
-						src="https://res.cloudinary.com/dnqmez68n/image/upload/v1685658210/boranahorizontal_zihxfv.png"
+						src="https://res.cloudinary.com/dnqmez68n/image/upload/v1686086725/Borana_logotipo_-_horizontal_-_texturado_-_positivo_9_fb4lvm.png"
 						alt=""
 						className="h-auto w-28 absolute left-2 md:left-auto md:right-10 top-2 md:top-4"
 					/>
@@ -55,7 +55,7 @@ const Varieties = () => {
 								{cafe.calif}
 							</p>
 						</div>
-						<div className="">
+						<div className="tracking-tight">
 							<img
 								src={cafe.pais}
 								alt=""
@@ -81,10 +81,10 @@ const Varieties = () => {
 						<img
 							src={cafe.grano}
 							alt={cafe.nombre}
-							className="hidden md:block h-auto max-h-96 w-auto mx-auto my-5"
+							className="hidden md:block max-h-full w-auto mx-auto my-5"
 						/>
 					</div>
-					<div className="flex flex-col md:justify-evenly lg:ml-32 mt-6 md:mt-0">
+					<div className="flex flex-col md:justify-evenly lg:ml-32 mt-6 md:mt-0 tracking-tight">
 						<div className="flex flex-col gap-4 fold:gap-0 relative">
 							{cafe.stock === "no" && (
 								<img
@@ -92,6 +92,11 @@ const Varieties = () => {
 									alt="sin Stock"
 									className="absolute -top-3 md:top-0 h-32 right-0"
 								/>
+							)}
+							{cafe.limit && (
+								<p className="text-3xl font-trade tracking-normal md:w-64 md:text-center mb-3 md:absolute -top-20 right-52">
+									Edición Limitada {cafe.limit} unidades
+								</p>
 							)}
 							<h3 className="uppercase font-bold">Valores:</h3>
 							<div className="max-w-xs flex flex-col fold:flex-row items-center justify-between fold:gap-4">
@@ -165,7 +170,7 @@ const Varieties = () => {
 									Recomendado para:{" "}
 								</h3>
 							</div>
-							<div className="grid grid-cols-2 gap-x-4 max-w-sm content-center md:gap-4">
+							<div className="grid grid-cols-2 gap-x-4 max-w-sm content-center mx-auto lg:mx-0 md:gap-4">
 								{cafe.reco.map((rec, index) => (
 									<div
 										key={index}

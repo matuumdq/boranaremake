@@ -1,5 +1,44 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { BsWhatsapp, BsInstagram, BsFacebook } from "react-icons/bs";
+import { Toaster, toast } from "sonner";
 const Contact = () => {
+	const form = useRef();
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [messages, setMessages] = useState("");
+	const sendEmail = (e) => {
+		e.preventDefault();
+
+		if (name === "" || email === "" || messages === "") {
+			toast.error("Todos los campos son obligatorios");
+			return;
+		}
+
+		emailjs
+			.send(
+				import.meta.env.VITE_SERVICE,
+				import.meta.env.VITE_TEMPLATE,
+				{
+					from_name: name,
+					from_email: email,
+					message: messages,
+				},
+				import.meta.env.VITE_USER_API
+			)
+			.then(
+				() => {
+					toast.success("Email enviado satisfactoriamente");
+					e.target.reset();
+					setName("");
+					setEmail("");
+					setMessages("");
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
 	return (
 		<section
 			id="contacto"
@@ -39,57 +78,43 @@ const Contact = () => {
 					</div>
 					<div className="w-full lg:w-1/2 xl:w-5/12 px-4">
 						<div className="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-							<form>
+							<form ref={form} onSubmit={sendEmail}>
 								<div className="mb-6">
 									<input
 										type="text"
 										placeholder="Ingrese su Nombre"
-										className="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
-                        "
+										onChange={(e) =>
+											setName(e.target.value)
+										}
+										name="user_name"
+										id="user_name"
+										className="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary"
 									/>
+									<label htmlFor="user_name" />
 								</div>
 								<div className="mb-6">
 									<input
 										type="email"
+										onChange={(e) =>
+											setEmail(e.target.value)
+										}
+										name="user_email"
+										id="user_email"
 										placeholder="Ingrese su Email"
-										className="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
-                        "
+										className="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary"
 									/>
+									<label htmlFor="user_email" />
 								</div>
 								<div className="mb-6">
 									<textarea
 										rows="6"
+										onChange={(e) =>
+											setMessages(e.target.value)
+										}
+										name="message"
+										id="message"
 										placeholder="Escribe su Mensaje"
-										className="
-                        w-full
-                        rounded
-                        py-3
-                        px-[14px]
-                        text-body-color text-base
-                        border border-[f0f0f0]
-                        resize-none
-                        outline-none
-                        focus-visible:shadow-none
-                        focus:border-primary
-                        "
+										className="w-full rounded py-3 px-[14px] text-body-color text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary"
 									></textarea>
 								</div>
 								<div>
@@ -101,6 +126,7 @@ const Contact = () => {
 									</button>
 								</div>
 							</form>
+							<Toaster richColors />
 							<div>
 								<span className="absolute -right-6 -top-6 z-[-1]">
 									<svg

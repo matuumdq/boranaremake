@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { IoIosArrowUp } from "react-icons/io";
 const Scroll = () => {
 	const [showScrollButton, setShowScrollButton] = useState(false);
 	useEffect(() => {
@@ -22,8 +22,8 @@ const Scroll = () => {
 	return (
 		<div className="fixed bottom-14 right-0 mb-4 mr-9 z-50">
 			{showScrollButton && (
-				<BsFillArrowUpCircleFill
-					className="text-3xl fold:text-5xl text-gray-800"
+				<IoIosArrowUp
+					className="p-1 rounded-lg bg-gray-200 fold:text-3xl text-gray-800 cursor-pointer"
 					onClick={() => {
 						window.scrollTo({ top: 0, behavior: "smooth" });
 					}}

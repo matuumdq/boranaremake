@@ -18,7 +18,7 @@ export const coffee = [
 		text2: "Destacado por su acidez delicada, cuerpo medio y gran dulzor. Según baja su temperatura, su acidez se vuelve algo más presente sin perder balance.",
 		text3: "De final agradable y persistente. Complementa de forma perfecta las preparaciones con leche.",
 		reco: ["Espresso", "Aeropress", "Prensa Francesa", "Moka"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685814119/granos_z86mq2.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087622/naturalcaramel_htllgr.png",
 	},
 	{
 		id: 2,
@@ -39,7 +39,7 @@ export const coffee = [
 		text2: "Su taza es acaramelada y cremosa, y sus notas recuerdan a chocolate, avellanas y naranjas.",
 		text3: "De cuerpo completo, acidez media cítrica y gran dulzor, lo recomendamos tanto para filtrados como para espressoy preparaciones con leche.",
 		reco: ["Metodos Filtrados", "Espresso", "Prensa Francesa", "Aeropress"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685814119/granos_z86mq2.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087623/Topaziocampos_mc7q7j.png",
 	},
 	{
 		id: 3,
@@ -60,7 +60,7 @@ export const coffee = [
 		text2: "Su textura resulta almibarada y agradable, resultado de la combinación de su acidez redonda, gran dulzor y cuerpo denso y oleoso. Excelente base para las preparaciones con leche.",
 		text3: "Su textura resulta almibarada y agradable, resultado de la combinación de su acidez redonda, gran dulzor y cuerpo denso y oleoso. Excelente base para las preparaciones con leche.",
 		reco: ["Metodos Filtrados", "Espresso", "Moka", "Cold Brew"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685814119/granos_z86mq2.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087622/fazendagrano_uewid8.png",
 	},
 	{
 		id: 4,
@@ -81,7 +81,7 @@ export const coffee = [
 		text2: "Su taza es achocolatada y frutal, y sus notas recuerdan a chocolate con leche, naranjas, damascos y retrogusto floral.",
 		text3: "De cuerpo medio y sedoso, acidez media cítrica y buen dulzor, tiene el pack completo de un buen café colombiano!",
 		reco: ["Metodos Filtrados", "Aeropress", "Espresso", "Cold Brew"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685997829/caranavi_l78n4z.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087622/huilagrano_gmytbk.png",
 		disp: "07/06/2023",
 	},
 	{
@@ -103,7 +103,7 @@ export const coffee = [
 		text2: "Su perfil es achocolatado y frutal y sus notas recuerdan a chocolate con leche, limón, frambuesas y ligero retrogusto floral.",
 		text3: "Su acidez es cítrica alimonada, su dulzor marcado a panela y su cuerpo completo y cremoso. Es ideal para todo tipo de preparaciones",
 		reco: ["Metodos Filtrados", "Aeropress", "Cold Brew", "Espresso"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685997829/caranavi_l78n4z.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087622/caucagrano_nzpmlg.png",
 	},
 	{
 		id: 6,
@@ -124,7 +124,7 @@ export const coffee = [
 		text2: "En boca es dulce, con notas a pomelo, manzana verde y un final de frambuesas. De cuerpo aterciopelado y acidez cítrica que recuerda a pomelo.",
 		text3: "Por sus aromas, sabores y textura, es ideal para preparar en filtrados.",
 		reco: ["Metodos Filtrados", "Aeropress", "Cold Brew", "Moka"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685997829/caranavi_l78n4z.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087621/caranavigrano_s4ul59.png",
 	},
 	{
 		id: 7,
@@ -141,10 +141,11 @@ export const coffee = [
 		precio250: 5000,
 		precio1k: "",
 		stock: "si",
+		limit: 100,
 		text1: "Seleccionamos este microlote pensando en el café que elegirías para ocasiones especiales.",
 		text2: "Su aroma es dulce y refinado, con notas a higos secos, azúcar mascabo y lemongrass. En boca es de perfil acaramelado, complejo y frutal, predominando las notas a duraznos, caramelo y frutas dulces.",
 		text3: "Su gran dulzor, una acidez media y cítrica y su cuerpo completo y aterciopelado logran que quieras volver a saborear una taza más.",
 		reco: ["Metodos Filtrados", "Aeropress", "Espresso", "Cold Brew"],
-		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1685997829/caranavi_l78n4z.png",
+		grano: "https://res.cloudinary.com/dnqmez68n/image/upload/v1686087622/fincacerrograno_aoqanu.png",
 	},
 ];

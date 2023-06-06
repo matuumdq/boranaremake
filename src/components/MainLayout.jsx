@@ -16,7 +16,7 @@ const MainLayout = () => {
 					timeout={300}
 					classNames="page"
 				>
-					<main className="w-full h-auto min-h-[40vh] font-tradegothic -tracking-[0.08em]">
+					<main className="w-full h-auto min-h-[40vh] font-tradegothic tracking-tighter">
 						<Outlet />
 					</main>
 				</CSSTransition>
