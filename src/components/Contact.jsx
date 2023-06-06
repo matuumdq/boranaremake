@@ -35,7 +35,7 @@ const Contact = () => {
 					setMessages("");
 				},
 				(error) => {
-					console.log(error.text);
+					toast.error(error.text);
 				}
 			);
 	};

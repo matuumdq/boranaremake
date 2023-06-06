@@ -3,13 +3,6 @@ import { GiCoffeeBeans } from "react-icons/gi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Varieties = () => {
-	// const cafes = [
-	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718172/Caramel_coafnw.png",
-	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/fazenda_gwihos.png",
-	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685718317/TOpazio_w51lzm.png",
-	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719164/Cauca_dnmnqb.png",
-	// 	"https://res.cloudinary.com/dnqmez68n/image/upload/v1685719288/finca_vnoybr.png",
-	// ];
 	return (
 		<div className="flex flex-col gap-4 mb-6 font-tradereg" id="tienda">
 			{coffee.map((cafe) => (
@@ -114,7 +107,7 @@ const Varieties = () => {
 								</div>
 								{cafe.stock === "si" && cafe.precio250 ? (
 									<a
-										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%20250%20gramos`}
+										href={`https://api.whatsapp.com/send?phone=+5492236035028&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%20250%20gramos`}
 										target="_blank"
 										rel="noreferrer"
 										className="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
@@ -144,7 +137,7 @@ const Varieties = () => {
 
 								{cafe.stock === "si" && cafe.precio1k ? (
 									<a
-										href={`https://api.whatsapp.com/send?phone=+5492236681270&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%201%20KG`}
+										href={`https://api.whatsapp.com/send?phone=+5492236035028&text=Hola,%20quiero%20el%20cafe%20${cafe.nombre}%20${cafe.nombre2}%20en%20su%20version%20de:%201%20KG`}
 										target="_blank"
 										rel="noreferrer"
 										className="bg-white text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-1 px-2 inline-flex items-center ease-in duration-300"
@@ -185,11 +178,6 @@ const Varieties = () => {
 					</div>
 				</div>
 			))}
-			{/* {cafes.map((cafe, index) => (
-				<div key={index} className="w-full">
-					<img src={cafe} alt="" className="w-full h-auto" />
-				</div>
-			))} */}
 		</div>
 	);
 };
