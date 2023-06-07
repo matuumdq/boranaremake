@@ -56,7 +56,7 @@ const Contact = () => {
 							</h2>
 							<p className="text-base text-body-color leading-relaxed mb-9">
 								Nuestro equipo esta atento para resolver
-								cualquier duda e inquietud que puedas tener, al
+								cualquier duda e inquietud que puedas tener al
 								momento de elegir como de hacer tu compra, te
 								esperamos!
 							</p>
